@@ -1,0 +1,97 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 1.5rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, #11284d, #2376ac);
+  color: #f8fbff;
+}
+
+.kicker,
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: #9ed8ff;
+}
+
+.summary {
+  font-size: clamp(1.4rem, 4vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.supporting {
+  max-width: 52rem;
+  color: #dcefff;
+}
+
+.grid,
+.sectionGroup {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card,
+.infrastructure,
+.compliance {
+  background: #ffffff;
+  border: 1px solid #d8e2f0;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 12px 30px rgba(17, 40, 77, 0.08);
+}
+
+.card,
+.infrastructure,
+.compliance,
+.procedures {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.definitionList {
+  display: grid;
+  gap: 1rem;
+}
+
+.definitionRow {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.definitionRow dt {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.page ul {
+  display: grid;
+  gap: 0.6rem;
+  padding-left: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding-inline: 1rem;
+  }
+
+  .hero,
+  .card,
+  .infrastructure,
+  .compliance {
+    padding: 1.25rem;
+  }
+}
